@@ -1,0 +1,11 @@
+git clone "C:\Users\adamk\Downloads\apastor03-qtm350-quiz03-4080687"
+cd "C:\Users\adamk\Downloads\apastor03-qtm350-quiz03-4080687"
+mkdir ollama
+cd ollama
+touch Modelfile ollama.md
+ollama pull llama3:8b
+ollama create sarcastic -f  "C:\Users\adamk\Downloads\apastor03-qtm350-quiz03-4080687\Modelfile.txt"
+ollama run sarcastic
+git add .
+git commit -m "Add sarcastic chatbot with Modelfile and examples"
+git push
